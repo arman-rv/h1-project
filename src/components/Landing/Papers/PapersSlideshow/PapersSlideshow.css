@@ -1,0 +1,35 @@
+.swiper {
+  width: 100%;
+  height: 100% !important;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-col);
+}
+
+.swiper:hover .swiper-button-prev {
+  color: var(--main-col);
+  opacity: 1;
+}
+
+.swiper-button-prev {
+  color: var(--main-col);
+  opacity: 0;
+}
+
+.swiper:hover .swiper-button-next {
+  color: var(--main-col);
+  opacity: 1;
+}
+
+.swiper-button-next {
+  color: var(--main-col);
+  opacity: 0;
+}

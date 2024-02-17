@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import-normalize;
+
+@font-face {
+  font-family: vazir;
+  font-weight: 400;
+  src: url(./assets/fonts/IRANSansXFaNum-Regular.ttf);
+}
+
+#root {
+  background-color: var(--background);
+  transition: all;
+  transition-duration: 200ms;
+  font-family: vazir !important;
+}
+
+body {
+  background-color: var(--background);
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+h3 {
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 15px !important;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.validation {
+position: absolute;
+bottom: -23px;
+left: 10px;
+color: red;
+
+}
+
+.toastify{
+  font-family: vazir !important;
+  color:var(--text-col4);
+  background-color: var(--back-col);
+  z-index: 10000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

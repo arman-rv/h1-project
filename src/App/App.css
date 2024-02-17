@@ -1,0 +1,269 @@
+:root {
+  --background: rgb(255, 255, 255);
+  --intro: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(164, 246, 222, 1) 100%
+  );
+
+  --card-back: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 80%,
+    rgb(228, 247, 241) 90%,
+    rgba(164, 246, 222, 1) 100%
+  );
+
+  --main-col: rgb(91, 225, 185);
+  --main-col2: rgb(164, 246, 222);
+  --main-col3: rgb(204, 242, 231);
+  --back-col: rgb(251, 246, 246);
+  --panel-col: rgb(23, 107, 135);
+  --text-col: rgb(109, 103, 103);
+  --text-col2: rgb(65, 167, 137);
+  --text-col3: rgb(8, 158, 113);
+  --text-col4: rgb(33, 57, 75);
+  --text-col5: rgb(255, 255, 255);
+  --btn-dark: rgb(237, 237, 237);
+  --price: red;
+  --primary: rgb(33, 57, 75);
+  --secondary: rgb(156, 153, 165);
+  --link: rgb(3, 150, 161);
+  --dark-switch: rgb(8, 158, 113);
+  --statistics-back: rgb(164, 246, 222);
+  --darkblue:rgb(33, 57, 75);
+}
+
+[data-theme="dark"] {
+  --background: rgb(24, 37, 58);
+  --intro: none;
+  --card-back: rgb(11, 27, 54);
+  --main-col: rgb(91, 225, 185);
+  --main-col2: rgb(164, 246, 222);
+  --main-col3: rgb(204, 242, 231);
+  --back-col: rgb(11, 27, 54);
+  --panel-col: rgb(11, 27, 54);
+  --text-col: rgb(237, 237, 237);
+  --text-col2: rgb(65, 167, 137);
+  --text-col3: rgb(8, 158, 113);
+  --text-col4: rgb(237, 237, 237);
+  --text-col5: rgb(33, 57, 75);
+  --btn-dark: rgb(237, 237, 237);
+  --price: red;
+  --primary: rgb(91, 225, 185);
+  --secondary: rgb(156, 153, 165);
+  --link: rgb(3, 150, 161);
+  --dark-switch: rgb(11, 27, 54);
+  --statistics-back: rgb(11, 27, 54);
+  --darkblue:rgb(33, 57, 75);
+}
+
+[data-theme="green1"] {
+  --background: rgb(255, 255, 255);
+  --intro: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(164, 246, 222, 1) 100%
+  );
+
+  --card-back: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 80%,
+    rgb(228, 247, 241) 90%,
+    rgba(164, 246, 222, 1) 100%
+  );
+
+  --main-col: rgb(91, 225, 185);
+  --main-col2: rgb(164, 246, 222);
+  --main-col3: rgb(204, 242, 231);
+  --back-col: rgb(251, 246, 246);
+  --panel-col: rgb(23, 107, 135);
+  --text-col: rgb(109, 103, 103);
+  --text-col2: rgb(65, 167, 137);
+  --text-col3: rgb(8, 158, 113);
+  --text-col4: rgb(33, 57, 75);
+  --text-col5: rgb(255, 255, 255);
+  --btn-dark: rgb(237, 237, 237);
+  --price: red;
+  --primary: rgb(33, 57, 75);
+  --secondary: rgb(156, 153, 165);
+  --link: rgb(3, 150, 161);
+  --dark-switch: rgb(8, 158, 113);
+  --statistics-back: rgb(164, 246, 222);
+  --darkblue:rgb(33, 57, 75);
+}
+
+[data-theme="blue1"] {
+  --background: rgb(255, 255, 255);
+  --intro: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    #35A4FB 100%
+  );
+
+  --card-back: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 80%,
+    #62B8FC 90%,
+    #35A4FB 100%
+  );
+
+  --main-col: #088FFA;
+  --main-col2: #35A4FB;
+  --main-col3: #62B8FC;
+  --back-col: rgb(251, 246, 246);
+  --text-col: rgb(109, 103, 103);
+  --text-col2: #0476D0;
+  --text-col3: #035CA3;
+  --text-col4: #035CA3;
+  --text-col5: rgb(255, 255, 255);
+  --btn-dark: rgb(237, 237, 237);
+  --price: red;
+  --primary: #024376;
+  --secondary: rgb(156, 153, 165);
+  --link: rgb(3, 150, 161);
+  --dark-switch: #012949;
+  --statistics-back: #a2d7ff;
+  --darkblue:rgb(33, 57, 75);
+}
+
+[data-theme="orange1"] {
+  --background: rgb(255, 255, 255);
+  --intro: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(233, 138, 98, 1) 100%
+  );
+
+  --card-back: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 80%,
+    rgb(243, 193, 171) 90%,
+    rgb(233, 138, 98) 100%
+  );
+
+  --main-col: rgb(255, 77, 0);
+  --main-col2: rgb(255, 130, 77);
+  --main-col3: rgb(255, 181, 149);
+  --back-col: rgb(251, 246, 246);
+  --text-col: rgb(109, 103, 103);
+  --text-col2: rgb(255, 77, 0);
+  --text-col3: rgb(233, 70, 0);
+  --text-col4: rgb(33, 57, 75);
+  --text-col5: rgb(255, 255, 255);
+  --btn-dark: rgb(237, 237, 237);
+  --price: red;
+  --primary: rgb(33, 57, 75);
+  --secondary: rgb(156, 153, 165);
+  --link: rgb(3, 150, 161);
+  --dark-switch: rgb(255, 77, 0);
+  --statistics-back: rgb(255, 196, 171);
+  --darkblue:rgb(33, 57, 75);
+}
+
+[data-theme="pink1"] {
+  --background: rgb(255, 255, 255);
+  --intro: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    #FF5CAD 100%
+  );
+
+  --card-back: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 80%,
+    #FF8AC4 90%,
+    #FF5CAD 100%
+  );
+
+  --main-col: #FF007F;
+  --main-col2: #FF5CAD;
+  --main-col3: #FF8AC4;
+  --back-col: rgb(251, 246, 246);
+  --text-col: rgb(109, 103, 103);
+  --text-col2: #FF2E96;
+  --text-col3: #D10068;
+  --text-col4: rgb(33, 57, 75);
+  --text-col5: rgb(255, 255, 255);
+  --btn-dark: rgb(237, 237, 237);
+  --price: red;
+  --primary: rgb(33, 57, 75);
+  --secondary: rgb(156, 153, 165);
+  --link: rgb(3, 150, 161);
+  --dark-switch: #FF007F;
+  --statistics-back: #fbadd4;
+  --darkblue:rgb(33, 57, 75);
+}
+
+
+[data-theme="purple1"] {
+  --background: rgb(255, 255, 255);
+  --intro: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    #B24BF3 100%
+  );
+
+  --card-back: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 80%,
+    #C576F6 90%,
+    #B24BF3 100%
+  );
+
+  --main-col: #A020F0;
+  --main-col2: #B24BF3;
+  --main-col3: #C576F6;
+  --back-col: rgb(251, 246, 246);
+  --text-col: rgb(109, 103, 103);
+  --text-col2: #880ED4;
+  --text-col3: #880ED4;
+  --text-col4: #6C0BA9;
+  --text-col5: rgb(255, 255, 255);
+  --btn-dark: rgb(237, 237, 237);
+  --price: red;
+  --primary: #51087E;
+  --secondary: rgb(156, 153, 165);
+  --link: rgb(3, 150, 161);
+  --dark-switch: #6C0BA9;
+  --statistics-back: #D7A1F9;
+  --darkblue:rgb(33, 57, 75);
+}
+
+/* Customize the scrollbar */
+
+::-webkit-scrollbar {
+  /* Customize the scrollbar width */
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  /* Customize the scrollbar track */
+  background: rgba(134, 134, 134, 0);
+  margin: 10px 0 10px 0;
+
+}
+
+::-webkit-scrollbar-track:hover {
+  /* Customize the scrollbar track */
+  background: rgba(134, 134, 134, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  /* Customize the scrollbar thumb */
+
+  background: rgb(77, 77, 77);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* Customize the scrollbar thumb */
+
+  background: rgb(40, 40, 40);
+  width: 7px;
+}
