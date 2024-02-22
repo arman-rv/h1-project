@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import SvgElement from "../../CoursesList/parts/SvgElemen";
 
 const Category = ({ pCat, category, setCategory }) => {
@@ -19,7 +19,7 @@ const Category = ({ pCat, category, setCategory }) => {
         htmlFor="catt"
         className="w-[130px] flex text-xs justify-between items-center cursor-pointer"
       >
-        {category && category.categoryName}
+        {category && category?.categoryName}
 
         {/* svg element */}
         <SvgElement />
@@ -37,7 +37,7 @@ const Category = ({ pCat, category, setCategory }) => {
           className=""
         >
           {pCat &&
-            pCat.map((d, index) => {
+            pCat?.map((d, index) => {
               return (
                 <li  key={index}>
                   <input

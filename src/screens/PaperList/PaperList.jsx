@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-import { ButtonDarkGreen } from "../../components/common/ButtonDarkGreen/ButtonDarkGreen";
+// import { ButtonDarkGreen } from "../../components/common/ButtonDarkGreen/ButtonDarkGreen";
 import { PaperCard } from "../../components/common/PaperCard/PaperCard";
 import { ScrollRestoration } from "react-router-dom";
 import { Search } from "../CoursesList/parts/Search";
 import { Sort } from "../CoursesList/parts/Sort";
 import { getPaperCat, getpaper } from "../../core/services/api/paper";
-import { Category } from "./parts/category";
+import { Category } from "./parts/Category";
 import { Papers } from "../../components/Landing/Papers/Papers";
 
 const PaperList = () => {
   const [selected, setSelected] = useState({ id: "مرتب سازی" });
   const [searched, setSearched] = useState("");
   const [papers, setPapers] = useState([]);
-  const [pCat,setPcat]=useState();
-  const [category,setCategory]=useState({categoryName:"دسته بندی"});
-  const [randd,setRandd]=useState(1);
+  const [pCat, setPcat] = useState();
+  const [category, setCategory] = useState({ categoryName: "دسته بندی" });
+  const [randd, setRandd] = useState(1);
 
-   //console.log("ppp",papers);
+  //console.log("ppp",papers);
 
   const data = [
     { value: "default", label: "مرتب سازی" },
@@ -26,14 +26,12 @@ const PaperList = () => {
     { value: "updateDate", label: "بروزترین " },
   ];
 
-
-
   // console.log(papers.news);
 
-  const getpapers = async ( sort, query, catId) => {
+  const getpapers = async (sort, query, catId) => {
     // console.log("yy",catId);
     try {
-      const paper = await getpaper( sort,  query, catId);
+      const paper = await getpaper(sort, query, catId);
       setPapers(paper.news);
     } catch (error) {
       throw new Error("ERROR: ", error);
@@ -50,8 +48,8 @@ const PaperList = () => {
   };
   useEffect(() => {
     getPapercatg();
-    getpapers(selected.value,searched,category.id);
-  }, [selected.value,searched,category.id,randd]);
+    getpapers(selected.value, searched, category.id);
+  }, [selected.value, searched, category.id, randd]);
   return (
     <>
       <div className="w-full h-[120px]  flex flex-col items-center justify-center opacity-[88%] mt-[50px]">
@@ -62,11 +60,11 @@ const PaperList = () => {
         className="md:container w-[100%] p-4 mb-3 flex flex-col-reverse md:flex-row justify-between gap-5 rounded-none md:rounded-2xl shadow-cardShadow"
       >
         <div className="flex justify-between gap-4 flex-wrap">
-        <Sort setSelected={setSelected} selected={selected} data={data} />
-        <Category  pCat={pCat} category={category} setCategory={setCategory}/>
+          <Sort setSelected={setSelected} selected={selected} data={data} />
+          <Category pCat={pCat} category={category} setCategory={setCategory} />
         </div>
         <div className="w-[100%] md:w-[40%] lg:w-[30%]">
-        <Search setSearched={setSearched} />
+          <Search setSearched={setSearched} />
         </div>
       </div>
       <div className="container p-0 mx-auto my-[50px] flex flex-col justify-center">
@@ -74,10 +72,10 @@ const PaperList = () => {
           {papers &&
             papers.map((papr, index) => {
               // console.log("pp",papr);
-              return <PaperCard  papr={papr} key={index} setRandd={setRandd}/>;
+              return <PaperCard papr={papr} key={index} setRandd={setRandd} />;
             })}
         </div>
-        <Papers/>
+        <Papers />
       </div>
 
       <ScrollRestoration />
