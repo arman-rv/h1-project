@@ -20,7 +20,7 @@ import { Pishkhan } from "../../components/Panel/PanelPage/Pishkhan.jsx";
 import { Register } from "../../components/Register/Register.jsx";
 import { CoursesCardLayout } from "../../components/common/CoursesCard/CoursesCardLayout.jsx";
 import { CoursesCard2Layout } from "../../components/common/CoursesCard/CoursesCard2Layout.jsx";
-import { FavCourse } from "../../components/Panel/PanelPage/favCourse.jsx";
+import { FavCourse } from "../../components/Panel/PanelPage/FavCourse.jsx";
 import { ContactUs } from "../../components/ContactUs/ContactUs.jsx";
 import { ChangePassword } from "../../components/Panel/PanelPage/ChangePassword.jsx";
 
@@ -52,7 +52,6 @@ const Router = createBrowserRouter([
       { path: "/paperdetail/:id", element: <PaperDetails /> },
 
       { path: "/contactus", element: <ContactUs /> },
-
     ],
   },
   {
@@ -65,7 +64,6 @@ const Router = createBrowserRouter([
       { path: "/reservecourse", element: <ReserveCourse /> },
       { path: "/favcourse", element: <FavCourse /> },
       { path: "/changePassword", element: <ChangePassword /> },
-
     ],
   },
 ]);

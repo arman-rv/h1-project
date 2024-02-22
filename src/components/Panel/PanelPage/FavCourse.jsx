@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ReservationCourse } from "../../PanelUtilties/ReservationCourse";
 import { HeaderCourses } from "../../Dashboard/LeftDashboard/MyCourses/BottomLeftDashboard/HeaderCourses/HeaderCourses";
-import { Pgination } from "../../Dashboard/LeftDashboard/MyCourses/BottomLeftDashboard/Pagination/Pagination";
-import { reserved } from "../../../core/services/api/course";
+// import { Pgination } from "../../Dashboard/LeftDashboard/MyCourses/BottomLeftDashboard/Pagination/Pagination";
+// import { reserved } from "../../../core/services/api/course";
 import { deletFavorite, getfave } from "../../../core/services/api/userPanel";
 
 const FavCourse = ({ name, date, dates }) => {
