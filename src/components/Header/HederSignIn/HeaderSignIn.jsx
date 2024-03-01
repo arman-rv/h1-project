@@ -61,7 +61,7 @@ const HeaderSignIn = () => {
             <ul
               tabIndex={0}
               style={{ background: "var(--back-col)" }}
-              className="text-base menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-cardShadow bg-base-100 rounded-box w-52"
+              className="text-base menu menu-sm dropdown-content mt-3 p-2 shadow-cardShadow bg-base-100 rounded-box w-52 relative z-[999]"
             >
               {paage.map(({ name, goTo }) => (
                 <li key={name} lin={goTo}>
